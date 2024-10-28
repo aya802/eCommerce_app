@@ -2,7 +2,7 @@
 
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:e_commerce_app/screens/get_started/get_started_screen.dart';
-import 'package:e_commerce_app/screens/home/home_screen.dart';
+import 'package:e_commerce_app/screens/home/shop_home_screen.dart';
 import 'package:e_commerce_app/screens/register/register_screen.dart';
 import 'package:e_commerce_app/theme/colors.dart';
 import 'package:flutter/material.dart';

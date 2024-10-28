@@ -1,7 +1,8 @@
-import 'package:e_commerce_app/screens/home/home_screen.dart';
+import 'package:e_commerce_app/screens/home/shop_home_screen.dart';
 import 'package:e_commerce_app/screens/login/login_screen.dart';
 import 'package:e_commerce_app/screens/on_boarding/on_boarding_screen.dart';
 import 'package:e_commerce_app/screens/splash_screen.dart';
+import 'package:e_commerce_app/shared/componant/constants.dart';
 import 'package:e_commerce_app/shared/local/shared_pref_cache.dart';
 import 'package:e_commerce_app/shared/remote/dio_helper.dart';
 import 'package:flutter/material.dart';
@@ -12,13 +13,13 @@ void main() async{
   DioHelper.init();
   await  CacheHelper.init();
   var onBoarding= CacheHelper.getData(key:'onBoarding');
-  var token= CacheHelper.getData(key:'token');
+  token= CacheHelper.getData(key:'token');
  // print(token);
   late Widget widget;
 
   if(onBoarding != null){
     if(token != null){
-      widget=HomeScreen();
+      widget=ShopLayout();
     }else{
       widget=LoginScreen();
     }

@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/screens/home/home_screen.dart';
+import 'package:e_commerce_app/screens/home/shop_home_screen.dart';
 import 'package:e_commerce_app/shared/componant/componant.dart';
 import 'package:e_commerce_app/theme/colors.dart';
 import 'package:flutter/cupertino.dart';
@@ -70,7 +70,7 @@ class GetStarted extends StatelessWidget{
                         Navigator.pushAndRemoveUntil(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => HomeScreen(),
+                              builder: (context) => ShopLayout(),
                             ),
                                 (Route<dynamic> route) => false);
                       },
