@@ -24,7 +24,7 @@ void main() async{
       widget=LoginScreen();
     }
   }else{
-    widget= SplashScreen();
+    widget= OnBoardingScreen();
   }
   runApp((MyApp(startWidget: widget,)));
 }

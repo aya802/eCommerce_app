@@ -76,7 +76,7 @@ class GetStarted extends StatelessWidget{
                       },
                       style: ElevatedButton.styleFrom(
                         padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15),
-                        backgroundColor: MyColors.pinkColor, // Button color
+                        backgroundColor: MyColors.defaultColor, // Button color
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0),
                         ),

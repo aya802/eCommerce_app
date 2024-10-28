@@ -34,14 +34,14 @@ class ShopLayout extends StatelessWidget {
                           icon: Icon(Icons.search,color: Colors.black,)),
                     ],
                     title: Text(
-                      'Stylish',
+                      'Salla',
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
                     )),
                 body: cubit.bottomScreens[cubit.currentIndex],
                 bottomNavigationBar: BottomNavigationBar(
                   iconSize: 30,
                   unselectedItemColor: Colors.grey,
-                  selectedItemColor: MyColors.pinkColor,
+                  selectedItemColor: MyColors.defaultColor,
                   onTap: (index) {
                     cubit.changeBottom(index);
                   },

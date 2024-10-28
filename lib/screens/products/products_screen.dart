@@ -178,7 +178,7 @@ Widget buildGridProduct(ProductModel model,context) => Container(
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 14,
-                      color: MyColors.pinkColor),
+                      color: MyColors.defaultColor),
                 ),
                 SizedBox(width: 5),
                 if (model.discount != 0)
@@ -197,7 +197,7 @@ Widget buildGridProduct(ProductModel model,context) => Container(
                     },
                     icon:CircleAvatar(
                       radius: 15,
-                      backgroundColor: ShopCubit.get(context).favorites[model.id]!?MyColors.pinkColor:Colors.grey,
+                      backgroundColor: ShopCubit.get(context).favorites[model.id]!?MyColors.defaultColor:Colors.grey,
                       child: Icon(
                         Icons.favorite_border,
                         size: 14,
