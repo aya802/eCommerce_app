@@ -128,7 +128,7 @@ required double width,
      child: Text(text,),
      height: height,
      minWidth: width,
-       color: MyColors.pinkColor,
+       color: MyColors.defaultColor,
 
 
 

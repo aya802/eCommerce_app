@@ -2,7 +2,7 @@
 
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:e_commerce_app/screens/get_started/get_started_screen.dart';
-import 'package:e_commerce_app/screens/home/home_screen.dart';
+import 'package:e_commerce_app/screens/home/shop_home_screen.dart';
 import 'package:e_commerce_app/screens/register/register_screen.dart';
 import 'package:e_commerce_app/theme/colors.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +40,7 @@ class LoginScreen extends StatelessWidget {
                     Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => GetStarted(),
+                          builder: (context) => ShopLayout(),
                         ),
                             (Route<dynamic> route) => false);
                   });
@@ -106,7 +106,7 @@ class LoginScreen extends StatelessWidget {
                       TextButton(
                           onPressed:(){
 
-                          }, child: Text('Forgot Password?',style: TextStyle(color: MyColors.pinkColor),)),
+                          }, child: Text('Forgot Password?',style: TextStyle(color: MyColors.defaultColor),)),
                       SizedBox(
                         height: 30,
                       ),
@@ -132,12 +132,12 @@ class LoginScreen extends StatelessWidget {
                                 'Login',
                                 style: TextStyle(color: Colors.white,fontSize: 20),
                               ),
-                              color: MyColors.pinkColor,
+                              color: MyColors.defaultColor,
 
                             ),
                           ),
                           fallback: (context) =>
-                              Center(child: CircularProgressIndicator(color: MyColors.pinkColor,))),
+                              Center(child: CircularProgressIndicator(color: MyColors.defaultColor,))),
                       SizedBox(
                         height: 60.h,
                       ),
@@ -184,7 +184,7 @@ class LoginScreen extends StatelessWidget {
                               },
                               child: Text('Sign Up',  style: TextStyle(
 
-                                  color:MyColors.pinkColor
+                                  color:MyColors.defaultColor
                               ),)),
                         ],
                       )

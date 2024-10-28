@@ -31,17 +31,17 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   List<ModelOnBoarding> boarding = [
     ModelOnBoarding(
-        img: 'assets/img/fashion shop-rafiki 1.png',
+        img: 'assets/img/onboarding_1.jpg',
         title: 'Choose Products',
         body:
             'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'),
     ModelOnBoarding(
-        img: 'assets/img/Sales consulting-pana 2.png',
+        img: 'assets/img/onboarding_1.jpg',
         title: 'Make Payment',
         body:
             'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'),
     ModelOnBoarding(
-        img: 'assets/img/Shopping bag-rafiki 3.png',
+        img: 'assets/img/onboarding_1.jpg',
         title: 'Get Your Order',
         body:
             'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.'),
@@ -152,13 +152,13 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                   child:isLast? Text(
                     'Get Started',
                     style: TextStyle(
-                        color: MyColors.pinkColor,
+                        color: MyColors.defaultColor,
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w600),
                   ):Text(
                     'Next',
                     style: TextStyle(
-                        color: MyColors.pinkColor,
+                        color: MyColors.defaultColor,
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w600),
                   ),
